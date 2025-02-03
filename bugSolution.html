@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be replaced.
+  </div>
+  <script>
+    // Correct way to modify the innerHTML using DOM methods
+     let newParagraph = document.createElement("p");
+     newParagraph.textContent = "This is a paragraph.";
+     let newSpan = document.createElement("span");
+     newSpan.textContent = "blue";
+     newSpan.style.color = "blue";
+     newParagraph.appendChild(newSpan);
+     document.getElementById("myDiv").appendChild(newParagraph);
+  </script>
+</body>
+</html>
