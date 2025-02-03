@@ -1,0 +1,1 @@
+This repository demonstrates a common yet subtle bug in HTML manipulation. The `bug.html` file shows an incorrect way to use `innerHTML`, leading to unexpected or inconsistent results. The `bugSolution.html` file demonstrates the proper method of adding HTML elements to the DOM by constructing elements and appending them instead of relying only on `innerHTML`.
